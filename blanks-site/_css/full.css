@@ -1,0 +1,372 @@
+div.css-info span#css-full {display:inline-block}
+
+html {line-height:1.5}
+body {background:#666;font-family: Arial, Helvetica, sans-serif;}
+.br {clear:both;}
+
+#header {background:#000;color:#fff;padding:4px 10px;position:relative;}
+#header a {color:#fff;}
+#footer {background:#000;color:#fff;padding:4px 10px;}
+#title {background:#333;color:#fff;padding:0px 10px;margin-top:2px;float:left;width:51%;}
+#byline {background:#333;color:#fff;padding:0px 10px;margin-top:2px;float:left;Width:51%;}
+#login {background:#333;margin:2px;position:absolute;right:0;top:0;}
+#login ul {color:#fff;padding:0px 10px;margin:0;}
+#login li {display:inline-block;padding:0px 10px;}
+#menu {background:#333;margin:2px;position:absolute;right:0;bottom:0;}
+#menu ul {color:#fff;padding:0px 10px;margin:0;}
+#menu li {display:inline-block;padding:0px 10px;}
+ 
+.page-wrap 
+{
+	margin: 0 auto;
+	width:930px;
+	background:#fff;
+}
+.content-wrap 
+{
+}
+
+.content-wrap p
+{
+	margin-right:45%;
+}
+
+
+img.right {
+position:relative;
+margin:0 -2px 10px 17px;
+clear:right; 
+float:right;}
+
+img.left {
+position:relative;
+margin:0;
+margin-right:1.1em;
+padding-right:3px;
+clear:left;
+float:left;}
+
+
+
+/* *************************************** *
+ *  Adjust base fonts to the device width  *
+ * *************************************** */
+
+
+@charset "utf-8";
+    /* CSS Document */
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+
+    body {background:red !important;}
+
+     .fonts
+     {
+      font-size: 75%;
+     }    
+    }
+    /* Smartphones (landscape) ----------- */
+    @media only screen
+    and (min-width : 321px) {
+
+    body {background:green;}
+
+     .fonts
+     {
+      font-size: 120%;
+     }  
+    }
+    /* Smartphones (portrait) ----------- */
+    @media only screen
+    and (max-width : 320px) {
+
+    body {background:blue;}
+
+
+     .fonts
+     {
+      font-size: 120%;
+     }  
+    }
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px) {
+
+    body {background:yellow;}
+
+     .fonts
+     {
+      font-size: 120%;
+     }    
+    }
+    /* iPads (landscape) ----------- */
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape) {
+
+    body {background:pink;}
+
+
+     .fonts
+     {
+      font-size: 150%;
+     }    
+    }
+    /* iPads (portrait) ----------- */
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait) {
+
+
+    body {background:lime;}
+
+
+
+     .fonts
+     {
+      font-size: 120%;
+     }  
+    }
+    /* Desktops and laptops ----------- */
+    @media only screen
+    and (min-width : 1224px) {
+    
+    
+
+    body {background:brown;}
+
+    
+     .fonts
+     {
+      font-size: 156%;
+     }    
+    }
+    /* Large screens ----------- */
+    @media only screen
+    and (min-width : 1824px) {
+    
+
+    body {background:#ccc;}
+
+    
+    
+     .fonts
+     {
+      font-size: 200%;
+     }    
+    }
+    /* iPhone 4 ----------- */
+    @media
+    only screen and (-webkit-min-device-pixel-ratio : 1.5),
+    only screen and (min-device-pixel-ratio : 1.5) {
+    
+    
+   
+    body {background:black;}
+
+ 
+    
+     .fonts
+     {
+      font-size: 190%;
+     }    
+    }
+
+
+/* *************************
+ *  Coloured book icons
+ * *************************/
+ 
+#blerb {display:block;border:0;}
+
+ 
+.book 
+{
+	border-bottom:solid 2px #333;
+	border-left:solid 2px #333;		
+	border-radius:10px 0 0 10px;
+	border-right:none;
+	border-top:solid 2px #333;
+	color:#fff;
+	display:inline-block;
+	height:15px;
+	letter-spacing: 1.5px;
+	margin:0;
+	padding: 2px 0px 4px 4px;
+	position:relative;
+	text-align:center;
+	width:60px;
+}	
+
+.book:after 
+{
+		border-radius: 0;
+		border-top:white solid 2px;
+		border-right:white solid 2px;
+		border-bottom:white solid 2px;
+		border-left:0;
+		content:"";
+		height:16px;
+		position:absolute;
+		right:0;
+		text-align:right;
+		top:0;
+}
+
+#blerb .sdn-see 
+	{
+		background:blue;
+
+	}
+#blerb .sdn-do 
+	{
+		background:orange;
+
+	}
+
+#blerb .sdn-know 
+	{
+		background:rgb(255,126,0);
+	}
+	
+#blerb .sdn-com 
+	{
+		background:#ccc;
+	}
+
+.hp-write {background:#eee;}
+
+/* ***** end Coloured book icons ***** */
+
+
+
+/* ******************************
+ *  Speeach and thought bubbles
+ * *****************************/
+
+.centre
+{
+	clear: both;
+	margin: auto;
+	position:relative;
+	width:80%;	
+}
+
+p.bubble
+{
+	color:#333;
+	background-color: #fff;
+	border: 8px solid #666;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-moz-box-shadow: 2px 2px 4px #888;
+	-webkit-border-radius: 30px;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+	line-height: 20px;
+	padding:20px 0;
+	position: relative;
+	text-align: center;
+	width: 200px;
+}
+
+p.bubble.left 
+{
+	float:left;
+	margin: 0px auto;
+}
+
+p.bubble.right 
+{
+	float:right;
+	margin: 0 10px 40px 40px;
+
+}
+
+p.bubble:before, p.bubble:after
+{
+	content: ' ';
+	height: 0;
+	position: absolute;
+	width: 0;
+}
+
+p.thought
+{
+	width: 300px;
+	-webkit-border-radius: 108px;
+	-moz-border-radius: 108px;
+	border-radius: 108px;
+}
+
+
+p.thought.right:before
+{
+	bottom: -25px;
+	left: -15px;
+}
+
+p.thought.right:after
+{
+	bottom: -34px;
+	left: -22px;
+}
+
+p.thought.left:before
+{
+	bottom: -25px;
+	right: -15px;
+}
+
+p.thought.left:after
+{
+	bottom: -34px;
+	right: -22px;
+}
+
+p.thought:before
+{
+	background-color: #fff;
+	border: 8px solid #666;
+	border-radius: 28px;
+	-webkit-border-radius: 28px;
+	-moz-border-radius: 28px;
+	height: 40px;
+	width: 40px;
+}
+
+p.thought:after
+{
+	background-color: #fff;
+	border: 8px solid #666;
+	border-radius: 18px;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	height: 20px;
+	width: 20px;
+}
+
+p.speech:before
+{
+	border: 25px solid;
+	border-color: #666 transparent transparent #666;
+	left: 30px;
+	top: 100px;
+}
+
+p.speech:after
+{
+	border: 15px solid;
+	border-color: #fff transparent transparent #fff;
+	left: 38px;
+	top: 100px;
+}
+
+/* ***** end Speeach and thought bubbles ***** */
+ 
+

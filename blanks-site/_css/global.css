@@ -1,0 +1,266 @@
+/* test info .. show id of relevant span if we are using this style sheet */
+.test .css-info span#global::before {content: attr(id);}
+
+.hidden {display:none;}
+.visible {display:block;}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+html {line-height:1em;}
+body {
+	position:relative;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.35em;
+	color:#656565;
+	padding:0;
+	margin:0;
+    font-size: 0.8em;
+    font-weight: 200;
+    line-height: 1.4;
+	
+	}
+div.br {position:relative;clear:both;}
+ 
+#header {background:#eee;padding:0.1em;position:relative;line-height: 1em;}
+#header-top {color:#666;position:relative;}
+#header a#title {
+	background:#999;
+	padding:1em;
+	margin:0.1em;
+	float:left;
+	color:#eee;
+	text-decoration:none;
+	font-size:0.9em;
+	font-weight:normal;
+	line-height: 1em;
+	}
+
+#header #login a {color:#eee;text-decoration:none;font-size:0.9em;font-weight:normal;line-height: 1em;}
+
+/* #login {background:#333;margin:2px;position:absolute;right:0;top:0;} */
+#header #login {margin:0 0.4em;position:absolute;top: 0;right: 0} 
+
+
+
+#header #login ul {padding:0;margin:0;list-style: none}
+#header #login li {display:inline-block;padding:0;margin:0 0 0 0.4em;}
+#header #login li a {color:#333;line-height: 1em;}
+
+#footer {position: absolute;bottom:0;background:#000;padding:0.1%;margin: 0 0 -4em 0;width:99.8%;z-index:9;}
+#footer-bottom {color:#eee;position:relative;padding:0.4em;z-index:2;}
+#footer-menu {z-index:3;}
+
+.more-info {
+	display:block;
+	margin: 0.5em 0 -2em 0;
+	color: #aaa;
+	font-size:80%;}
+
+.more-info::after {
+	content: " More information";}
+
+
+
+
+
+
+
+ 
+.page-wrap 
+{
+	padding:0 0 8em 0;
+	width:100%;
+	background:#fff;
+}
+.content-wrap 
+{
+	padding:1em;
+/*	max-width:50em; */
+/*	margin-left:auto; */
+	margin-right:auto;
+}
+
+
+.content-wrap p
+{
+	margin:1em;
+}
+
+img.right {
+position:relative;
+margin:0 -2px 10px 17px;
+clear:right; 
+float:right;
+max-width: 100%;
+}
+
+img.left {
+position:relative;
+margin:0;
+margin-right:1.1em;
+padding-right:3px;
+clear:left;
+float:left;
+max-width: 100%;
+}
+
+
+
+/* *************************************** *
+ *  Adjust base fonts to the device width  *
+ * *************************************** */
+
+
+
+@charset "utf-8";
+
+
+/* ******************************
+ *  Speeach and thought bubbles
+ * *****************************/
+
+.centre
+{
+	clear: both;
+	margin: auto;
+	position:relative;
+	width:80%;	
+}
+
+p.bubble
+{
+	color:#333;
+	background-color: #fff;
+	border: 0.2em solid #666;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-moz-box-shadow: 2px 2px 4px #888;
+	-webkit-border-radius: 30px;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+	line-height: 20px;
+	padding:1.6em;
+	position: relative;
+	text-align: center;
+	width: 200px;
+}
+
+p.bubble.left 
+{
+	float:left;
+	margin: 0 40px 40px 10px;
+}
+
+p.bubble.right 
+{
+	float:right;
+	margin: 0 10px 40px 40px;
+
+}
+
+p.bubble:before, p.bubble:after
+{
+	content: ' ';
+	height: 0;
+	position: absolute;
+	width: 0;
+}
+
+p.thought
+{
+	width: 15em; 
+	max-width: 65%;
+	-webkit-border-radius: 108px;
+	-moz-border-radius: 108px;
+	border-radius: 108px;
+}
+
+
+p.thought.right:before
+{
+	bottom: -1em;
+	left: -0.5em;
+}
+
+p.thought.right:after
+{
+	bottom: -1.5em;
+	left: -0.75em;
+}
+
+p.thought.left:before
+{
+	bottom: -1em;
+	right: -0.5em;
+}
+
+p.thought.left:after
+{
+	bottom: -1.5em;
+	right: -0.75em;
+}
+
+p.thought:before
+{
+	background-color: #fff;
+	border: 0.2em solid #666;
+	border-radius: 28px;
+	-webkit-border-radius: 28px;
+	-moz-border-radius: 28px;
+	-moz-box-shadow: 2px 2px 4px #888;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+	height: 40px;
+	width: 40px;
+}
+
+p.thought:after
+{
+	background-color: #fff;
+	border: 0.2em solid #666;
+	border-radius: 18px;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	-moz-box-shadow: 2px 2px 4px #888;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+	height: 20px;
+	width: 20px;
+}
+
+p.speech:before
+{
+	border: 25px solid;
+	border-color: #666 transparent transparent #666;
+	left: 30px;
+	top: 100px;
+}
+
+p.speech:after
+{
+	border: 15px solid;
+	border-color: #fff transparent transparent #fff;
+	left: 38px;
+	top: 100px;
+}
+
+/* ***** end Speeach and thought bubbles ***** */
+
+
+
+/* forms */
+
+input[type=url] {width:100%;max-width: 30em;}
+
+
+
+

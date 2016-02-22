@@ -1,0 +1,77 @@
+/* test info .. show id of relevant span if we are using this style sheet */
+.test .css-info span#medium::before {content: attr(id);}
+
+
+#byline {
+	background:#333;
+	color:#fff;
+	padding:0.1em;
+	position:absolute;
+	bottom:0;
+	}
+
+#header a#menu-toggle {
+	background:#999;
+	padding:0.3em;
+	margin:0.1em;
+	position:absolute;
+	bottom:0;  
+	right:0;
+	color:#eee;
+	text-decoration: none;}
+
+
+#header #header-menu.hidden {display:none;}
+#header #header-menu.visible {display:block}
+
+#header .menu {display:none;}
+
+
+
+#footer .menu { position:relative;}
+
+
+/*
+#footer #footer-menu ul {
+	background:#333;
+	margin:1px;
+	padding:0 0.5em;
+	list-style: none;
+*/
+
+/*	position:absolute;
+	top:0;
+	right:0;
+	z-index:9;
+*/
+	}
+/*
+
+#footer #footer-menu li {display:inline-block;padding:0px 10px;}
+#footer #footer-menu li a {color:#eee;}
+*/
+
+
+
+
+.menu {
+	background:#eee;
+	margin:0;
+	padding:0;
+	}
+	
+.menu ul {
+	background:#333;
+	margin:1px;
+	padding:0 0.5em;
+	list-style: none;
+/*	position:absolute;
+	top:0;
+	right:0;
+	z-index:9;
+*/
+	}
+.menu li {display:inline-block;width:31%;}
+.menu li a {color:#eee;line-height: 2em;}
+
+

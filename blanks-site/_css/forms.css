@@ -1,0 +1,18 @@
+
+/* styles to show/hide form selectbox dependant optionGroups */
+
+	form .optionGroup {background:#eee;display:none}
+		
+	form .active .optionGroup {display:block}
+	form .inactive .optionGroup {display:none}
+		
+	form .active .optionGroup.active{display:block}
+	form .active .optionGroup.inactive {display:none}
+		
+	form .active .optionGroup.active.ready {background:#fff;}
+	form .active .optionGroup.active.done{background:#ddd;}
+			
+	form .active .ready .helper {background:#fff;}
+	form .active .done .helper {background:#ddd;}
+	
+/* styles to show/hide form selectbox dependant optionGroups */

@@ -1,0 +1,13 @@
+/* test info .. show id of relevant span if we are using this style sheet */
+.test .css-info span#xxlarge::before {content: attr(id);}
+
+
+#menu-toggle {display:none;}
+/* #menu {background:#333;margin:2px;position:absolute;right:0;bottom:0;} */
+#header-menu.hidden, #header-menu.visible {display:block}
+ 
+
+
+.menu {position:relative;background:green;margin:0;padding:0;}
+.menu ul {background:red;margin:1px;padding:0 0.5em;list-style: none;}
+.menu li {display:inline-block;padding:0px 10px;}
